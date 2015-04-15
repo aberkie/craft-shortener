@@ -48,5 +48,6 @@ To call `shorten` from a different Craft plugin:
 
 ###1.1
 * added custom domain field
+
 ###1.0
 * initial release
