@@ -4,6 +4,8 @@ Craft CMS Plugin for shortening URLs with Bitly
 ##Bitly Generic Access Token
 To use this plugin, you will need a bitly generic access token to authenticate your account. You can [get your token here](https://bitly.com/a/oauth_apps)!
 
+Hey! Now that you have this fancy token, why don't you check out [Verbatim](http://verbat.im/) ([GitHub](https://github.com/nclud/verbatim-craft)) for deep linking content! 
+
 ##Install
 1. Upload entire shortener directory to craft/plugins on your server.
 2. Navigate to your site's Plugin settings from the Control Panel.
@@ -13,8 +15,6 @@ To use this plugin, you will need a bitly generic access token to authenticate y
 ####Bitly Token
 
 Required. You can [get your token here](https://bitly.com/a/oauth_apps).
-
-Hey! Now that you have this fancy token, why don't you check out [Verbatim](http://verbat.im/) ([GitHub](https://github.com/nclud/verbatim-craft)) for deep linking content! 
 
 ####Cache Time In Seconds (Default is 1 day)
 
