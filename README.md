@@ -33,7 +33,7 @@ You have two options to use shortener from a template, as a Twig filter or as a 
 
 ####Plugin Variable
 	{% set longUrl = 'https://buildwithcraft.com/' %}
-	{% set shortUrl = craft.shorten.shorten(longUrl) %}
+	{% set shortUrl = craft.shortener.shorten(longUrl) %}
 	
 ###From a Plugin
 To call `shorten` from a different Craft plugin:
