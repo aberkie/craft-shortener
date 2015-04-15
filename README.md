@@ -22,7 +22,7 @@ Required. Set a high cache time to increase performance. Default is `86400` for 
 Requred. Choose either bit.ly, j.mp, or bitly.com to use for your shortened URLs.
 
 ####Custom Short Domain
-Optional. Enter your branded short domain that you have [registered with bitly](https://bitly.com/a/custom_domain_settings). Entering anythign in this box will override the Domain setting above.
+Optional. Enter your branded short domain that you have [registered with bitly](https://bitly.com/a/custom_domain_settings). Entering anything in this box will override the Domain setting above.
 
 ##Usage
 Shortener can be used from any template or plugin. 
