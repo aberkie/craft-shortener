@@ -19,7 +19,7 @@ Required. You can [get your token here](https://bitly.com/a/oauth_apps).
 Required. Set a high cache time to increase performance. Default is `86400` for one day.
 
 ####Domain
-Requred. Choose either bit.ly, j.mp, or bitly.com to use for your shortened URLs.
+Choose either bit.ly, j.mp, or bitly.com to use for your shortened URLs.
 
 ####Custom Short Domain
 Optional. Enter your branded short domain that you have [registered with bitly](https://bitly.com/a/custom_domain_settings). Entering anything in this box will override the Domain setting above.
