@@ -14,6 +14,8 @@ To use this plugin, you will need a bitly generic access token to authenticate y
 
 Required. You can [get your token here](https://bitly.com/a/oauth_apps).
 
+Hey! Now that you have this fancy token, why don't you check out [Verbatim](http://verbat.im/) ([GitHub](https://github.com/nclud/verbatim-craft)) for deep linking content! 
+
 ####Cache Time In Seconds (Default is 1 day)
 
 Required. Set a high cache time to increase performance. Default is `86400` for one day.
