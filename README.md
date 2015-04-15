@@ -3,7 +3,7 @@ Craft CMS Plugin for shortening URLs with Bitly
 
 ##Bitly Generic Access Token
 To use this plugin, you will need a bitly generic access token to authenticate your account. You can [get your token here](https://bitly.com/a/oauth_apps)!
-___
+
 ##Install
 1. Upload entire shortner directory to craft/plugins on your server.
 2. Navigate to your site's Plugin settings from the Control Panel.
@@ -20,7 +20,7 @@ Required. Set a high cache time to increase performance. Default is `86400` for 
 
 ####Domain
 Requred. Choose either bit.ly, j.mp, or bitly.com to use for your shortened URLs.
-___
+
 ##Usage
 Shortner can be used from any template or plugin. 
 
