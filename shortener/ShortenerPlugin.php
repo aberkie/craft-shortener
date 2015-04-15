@@ -41,7 +41,7 @@ class ShortenerPlugin extends BasePlugin
 		);
 	}
 
-	public function hookAddTwigExtension()
+	public function addTwigExtension()
 	{
 	    Craft::import('plugins.shortener.twigextensions.ShortenerTwigExtension');
 	    return new ShortenerTwigExtension();
