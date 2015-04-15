@@ -19,7 +19,7 @@ class ShortenerPlugin extends BasePlugin
 	
 	function getVersion()
 	{
-		return '1.0';
+		return '1.1';
 	}
 	
 	function getDeveloper()
@@ -37,7 +37,8 @@ class ShortenerPlugin extends BasePlugin
 		return array(
 			'token' => array(AttributeType::Mixed, 'default' => ''),
 			'cacheTime' => array(AttributeType::Number, 'default' => 86400),
-			'domain' => array(AttributeType::Mixed, 'default' => 'bit.ly')
+			'domain' => array(AttributeType::Mixed, 'default' => 'bit.ly'),
+			'customDomain' => array(AttributeType::String, 'default' => '')
 		);
 	}
 

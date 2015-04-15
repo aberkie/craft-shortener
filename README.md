@@ -21,6 +21,9 @@ Required. Set a high cache time to increase performance. Default is `86400` for 
 ####Domain
 Requred. Choose either bit.ly, j.mp, or bitly.com to use for your shortened URLs.
 
+####Custom Short Domain
+Optional. Enter your branded short domain that you have [registered with bitly](https://bitly.com/a/custom_domain_settings). Entering anythign in this box will override the Domain setting above.
+
 ##Usage
 Shortener can be used from any template or plugin. 
 
@@ -39,3 +42,11 @@ You have two options to use shortener from a template, as a Twig filter or as a 
 To call `shorten` from a different Craft plugin:
 
     $shortUrl = craft()->shortener->shorten($longUrl);
+
+
+##Changelog
+
+###1.1
+* added custom domain field
+###1.0
+* initial release

@@ -30,9 +30,18 @@ class ShortenerService extends BaseApplicationComponent
 		   
 				$endpoint = "https://api-ssl.bitly.com/v3/shorten";
 
+				$domain = "";
+				//Check for custom domain
+				if($settings->customDomain != '')
+				{
+					$domain = $settings->customDomain;
+				} else {
+					$domain = $settings->domain;
+				}
+
 				//Query parameters (http://dev.bitly.com/links.html#v3_shorten)
 			    $params = array(
-			    	'domain' => $settings->domain,
+			    	'domain' => $domain,
 			    	'format' => 'json',
 			    	'longUrl' => $url,
 			    	'access_token' => $settings->token
@@ -78,7 +87,6 @@ class ShortenerService extends BaseApplicationComponent
 			//If chaced, return cached result
 			$return = $cache;
 		}
-
 		//Return shortened URL or given URL
 		return $return;
 	}
