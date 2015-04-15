@@ -42,10 +42,10 @@ class ShortnerPlugin extends BasePlugin
 	}
 
 	public function hookAddTwigExtension()
-    {
-        Craft::import('plugins.shortner.twigextensions.ShortnerTwigExtension');
-        return new ShortnerTwigExtension();
-    }
+	{
+	    Craft::import('plugins.shortner.twigextensions.ShortnerTwigExtension');
+	    return new ShortnerTwigExtension();
+	}
 
 	public function getSettingsHtml()
 	{
