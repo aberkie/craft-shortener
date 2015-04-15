@@ -2,19 +2,19 @@
 
 /*
 *
-* Shortner for Craft - Main Plugin File
+* Shortener for Craft - Main Plugin File
 * Author: Aaron Berkowitz (@asberk)
-* https://github.com/aberkie/craft-shortner
+* https://github.com/aberkie/craft-shortener
 *
 */
 
 namespace Craft;
 
-class ShortnerPlugin extends BasePlugin
+class ShortenerPlugin extends BasePlugin
 {
 	function getName()
 	{
-		return Craft::t('Shortner Plugin');
+		return Craft::t('Shortener Plugin');
 	}
 	
 	function getVersion()
@@ -43,13 +43,13 @@ class ShortnerPlugin extends BasePlugin
 
 	public function hookAddTwigExtension()
 	{
-	    Craft::import('plugins.shortner.twigextensions.ShortnerTwigExtension');
-	    return new ShortnerTwigExtension();
+	    Craft::import('plugins.shortener.twigextensions.ShortenerTwigExtension');
+	    return new ShortenerTwigExtension();
 	}
 
 	public function getSettingsHtml()
 	{
-		return craft()->templates->render('shortner/settings', array(
+		return craft()->templates->render('shortener/settings', array(
 			'settings' => $this->getSettings()
 		));
 	}

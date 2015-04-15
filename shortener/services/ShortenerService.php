@@ -1,20 +1,20 @@
 <?php
 /*
 *
-* Shortner for Craft - Shortner Service
+* Shortener for Craft - Shortener Service
 * Author: Aaron Berkowitz (@asberk)
-* https://github.com/aberkie/craft-shortner
+* https://github.com/aberkie/craft-shortener
 *
 */
 namespace Craft;
 
-class ShortnerService extends BaseApplicationComponent
+class ShortenerService extends BaseApplicationComponent
 {
 
 	public function shorten($url)
 	{
 		//First, grab the URL to use as a cachekey
-		$cache_key = 'shortner_'.urlencode($url);
+		$cache_key = 'shortener_'.urlencode($url);
 
 		//Get the cache, if it exists
 		$cache = craft()->cache->get($cache_key);
@@ -26,7 +26,7 @@ class ShortnerService extends BaseApplicationComponent
 		{
 			if($url)
 			{
-				$settings = craft()->plugins->getPlugin('shortner')->getSettings();
+				$settings = craft()->plugins->getPlugin('shortener')->getSettings();
 		   
 				$endpoint = "https://api-ssl.bitly.com/v3/shorten";
 

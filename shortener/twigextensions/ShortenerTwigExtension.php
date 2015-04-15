@@ -2,9 +2,9 @@
 
 /*
 *
-* Shortner for Craft - Twig Filter Extension
+* Shortener for Craft - Twig Filter Extension
 * Author: Aaron Berkowitz (@asberk)
-* https://github.com/aberkie/craft-shortner
+* https://github.com/aberkie/craft-shortener
 *
 */
 
@@ -13,11 +13,11 @@ namespace Craft;
 use Twig_Extension;
 use Twig_Filter_Method;
 
-class ShortnerTwigExtension extends Twig_Extension
+class ShortenerTwigExtension extends Twig_Extension
 {
     public function getName()
     {
-        return 'shortner';
+        return 'shortener';
     }
 
     public function getFilters()
@@ -29,7 +29,7 @@ class ShortnerTwigExtension extends Twig_Extension
 
     public function shorten($url)
     {
-        $shortened = craft()->shortner->shorten($url);
+        $shortened = craft()->shortener->shorten($url);
         return $shortened;
     }
 }
